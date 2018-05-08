@@ -23,6 +23,7 @@
 |字段|类型|主键，外键|可以为空|默认值|约束|说明|
 |:-------:|:-------------:|:------:|:----:|:---:|:----:|:-----|
 |user_ID|varchar2(32)|主键|否|||用户ID创建的时候自增|
+|ISBN|varchar2(14)|外键|否| | | 书本印刷的ISBN,且每本书都不一样|
 |user_name|varchar2(32)| |否| | ||
 |gender|int|| ||否| |0||性别(0男1女)|
 |password|varchar2(32)| |否| '123456'| | 密码采用32位MD5加密|
@@ -94,67 +95,51 @@
 
 1. 获取用户未归还图书API
 
-- 功能：用于获取某用户全部未归还图书
+- 功能：获取某一本书一共所借阅的读者
 - 请求地址： http://localhost/v1/api/get_unreturnbooks_4reader
 - 请求方法：POST
 - 请求参数：
 
 |参数名称|必填|说明|
 |:-------:|:-------------: | :----------:|
-|user_ID|是|根据读者编号获取其未归还图书列表 |
+|ISBN|是|这本书一共所借阅的读者 |
 
 - 返回实例：
 ```
 {
-	"is_unreturnbooks_readers": [{
-		"ISDN": "978-7-5605-3454-1",
-		"book_name": "线性代数辅导讲义",
-		"author": "李永乐",
-		"publisher":"西安交通大学出版社"
-		"price":"49.80"
-		"public_date":"2010-2-1"
-		"total_num":"10"
-		"rest_num":"3"
-		"is_borrow":"是"
+	"readers": [{
+	    "user_ID":"201510414401"
+	    "ISDN": "978-7-5022-8668-2",
+	    "user_name":"jason"
+	    "gender":"0"
+	    "password":"******"
+	    "colleage":"信息科学与工程学院"
+	    "borrow_number":"3"
+
 
 	}, {
-        "ISDN": "978-7-5022-8668-2",
-               		"book_name": "高等数学辅导讲义",
-               		"author": "汤家凤",
-               		"publisher":"中国原子能出版社"
-               		"price":"38.00"
-               		"public_date":"20017-11-1"
-               		"total_num":"8"
-               		"rest_num":"3"
-               		"is_borrow":"是"
+                "user_ID":"201510414130"
+        	    "ISDN": "978-7-5022-8668-2",
+        	    "user_name":"Luke"
+        	    "gender":"1"
+        	    "password":"******"
+        	    "colleage":"文学与新闻学院"
+        	    "borrow_number":"1"
 	},{
-	                    "ISDN": "978-7-04-039661-2",
-                   		"book_name": "工程数学线性代数",
-                   		"author": "同济大学数学系",
-                   		"publisher":"高等教育出版社"
-                   		"price":"19.40"
-                   		"public_date":"1981-11-1"
-                   		"total_num":"8"
-                   		"rest_num":"1"
-                   		"is_borrow":"是"
-	} ,{
-        "ISDN": "978-7-5022-8870-9",
-        		"book_name": "接力题典1800",
-        		"author": "汤家凤",
-        		"publisher":"中国原子能出版社"
-        		"price":"68.00"
-        		"public_date":"20018-2-1"
-        		"total_num":"15"
-        		"rest_num":"0"
-        		"is_borrow":"否"
+            "user_ID":"201510611131"
+      	    "ISDN": "978-7-5022-8668-2",
+      	    "user_name":"Cherry"
+      	    "gender":"1"
+      	    "password":"******"
+      	    "colleage":"旅游与经济管理学院"
+      	    "borrow_number":"5"
 	}],
     "readerLendBook": {
-        "user_ID": "201510416603",
-        "user_name": "高等数学",
-        "profession": "考研",
-        "grade": "2015级"
+        "user_ID": "201510414401,201510611131,201510414130",
+        "user_name": "jason,Luke,Cherry",
+        "colleage": "信工、旅管、文新"
     },
-	"length": "4",
+	"length": "3",
 	"status": "1"
 }
 ```
@@ -162,10 +147,10 @@
 
 |参数名称|说明|
 |:-------:|:-------------: |
-|is_unreturnbooks_reader|该用户未归还图书的集合|
-|readerLendBook|该读者的用户信息|
-|length|未归还图书数量|
-|status|获取结果(1:succeed 0:failed)|
+|readers|该ISBN编号的图书一共所借阅的读者|
+|readLendRecord|该读者的用户信息|
+|length|借阅读者的数量|
+
 
 2. 归还图书API
 - 功能：用于向系统提交需要归还的图书项目
