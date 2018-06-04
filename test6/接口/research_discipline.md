@@ -7,7 +7,7 @@
      学生/老师：先登录
     
 - API请求地址： 
-    http://202.115.82.8:1522/v1/api/getUserSubject
+    http://202.115.82.8:1522/v1/api/research_discipline
 
 - 请求方式 ：
     GET  
