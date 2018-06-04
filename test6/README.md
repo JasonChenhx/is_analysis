@@ -33,7 +33,7 @@
 - ### [“选择学期”用例](./用例/选择学期.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/选择学期.html)
 - ### [“增加实验”用例](./用例/增加实验.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/增加实验.html)
 - ### [“学生列表”用例](./用例/学生列表.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/选择课程.html)
-- ### [“批改成绩并设置成绩组成部分”用例](./批改成绩并设置成绩组成部分.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/评定成绩.html)
+- ### [“批改成绩并设置成绩组成部分”用例](./用例/批改成绩并设置成绩组成部分.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/评定成绩.html)
 - ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/学生查看具体评分项.html)
 - ### [“修改密码”用例](./用例/修改密码.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改密码.html)
 - ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改用户信息.html)
