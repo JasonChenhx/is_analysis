@@ -39,4 +39,4 @@
 - ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改用户信息.html)
 - ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/查看用户信息.html)
 - ### [“登出”用例](./用例/登出.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/首页.html)
-- ### [“登陆”用例](./用例/登陆.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/UI/index.html)
+- ### [“登陆”用例](./用例/登陆.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/index.html)
