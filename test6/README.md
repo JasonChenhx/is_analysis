@@ -28,7 +28,7 @@
 - ### [参见数据库设计](./数据库设计.md)
 
 ## 6. 用例及界面详细设计
-- ### [“查找课程”用例](./用例/查找课程.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/查看用户信息.html)
+- ### [“查找课程”用例](./用例/查找课程.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/查看个人信息.html)
 - ### [“选择课程”用例](./用例/选择课程.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/进行选课.html)
 - ### [“选择学期”用例](./用例/选择学期.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/选择学期.html)
 - ### [“增加实验”用例](./用例/增加实验.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/增加实验.html)
@@ -36,7 +36,7 @@
 - ### [“批改成绩并设置成绩组成部分”用例](./用例/批改成绩并设置成绩组成部分.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/评定成绩.html)
 - ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/学生查看具体评分项.html)
 - ### [“修改密码”用例](./用例/修改密码.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改密码.html)
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改用户信息.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/查看用户信息.html)
-- ### [“登出”用例](./用例/登出.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/首页.html)
+- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/修改个人信息.html)
+- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/查看个人信息.html)
+- ### [“登出”用例](./用例/登出.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/首页.html)
 - ### [“登陆”用例](./用例/登陆.md),[界面](https://JasonChenhx.github.io/is_analysis/test6/ui/index.html)
